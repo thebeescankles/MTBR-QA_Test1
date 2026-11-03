@@ -1,0 +1,35 @@
+{
+  "name": "mtbr-qa_test1",
+  "version": "1.0.0",
+  "description": "BDD automation suite for demoqa.com/books using Playwright + playwright-bdd",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "pretest": "bddgen",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:smoke": "playwright test --grep @smoke",
+    "report": "playwright show-report reports/html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thebeescankles/MTBR-QA_Test1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/thebeescankles/MTBR-QA_Test1/issues"
+  },
+  "homepage": "https://github.com/thebeescankles/MTBR-QA_Test1#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6",
+    "dotenv": "^16.4.5",
+    "playwright-bdd": "^9.2.1",
+    "typescript": "^5.6.0"
+  }
+}
